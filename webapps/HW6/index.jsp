@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <title>登入頁面</title>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="test2.css">
   </head>
   <body align="center">
     <div class="container">

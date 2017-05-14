@@ -62,7 +62,7 @@
     <meta charset="utf-8">
     <title>會員管理</title>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="test2.css">
   </head>
 <body align="center">
     <div class="container">
@@ -110,42 +110,11 @@
             }
           }
           %>
+
           <br>
             <br>
-              <br>
-          <table align= "center">
-            <tr><th colspan="4">會員資料</th></tr>
-            <tr>
-              <th>姓名</th><th>生日</th><th>E-mail</th><th>電話號碼</th>
-              <%
-                try { rs.close();database.closeDB(); } catch (Exception e) { /* ignored */ }
-                try{
-                  database.connectDB();
-                  String sql = "select * from person;";
-                  database.query(sql);
-                  rs = database.getRS();
-                }catch(Exception ex){
-                  out.println(ex);
-                }
-                if(rs!=null){
-                  while(rs.next()){
-                    %>
-                    <tr>
-                      <td><%=rs.getString("name")%></td>
-                      <td><%=rs.getString("birth")%></td>
-                      <td><%=rs.getString("email")%></td>
-                      <td><%=rs.getString("phone")%></td>
-                    </tr>
-                    <%
-                  }
-                try { rs.close();database.closeDB(); } catch (Exception e) { /* ignored */ }
-                }
-              %>
-            </tr>
-          </table>
-          <br>
-            <br>
-            <input type="button" id="login" onclick="window.open('index.jsp','_self')" value="回到登入畫面"/>
+              <input type="button"  id="search" value="查詢會員資料" onclick="location.href='search.jsp'">
+            <input type="button" id="login" onclick="window.open('index.jsp','_self')" value="返回登入畫面"/>
           <%if(x==0 && y==0){%>
             <script>$("#test").html("登入失敗");</script>
             <p>帳號或密碼錯誤</p>
@@ -162,7 +131,7 @@
             <p>帳號已被使用</p>
             <br>
             <input type="button" onclick="history.back()" value="返回註冊頁面"/>
-            <input type="button" onclick="window.open('index.jsp','_self')" value="回到登入畫面"/>
+            <input type="button" onclick="window.open('index.jsp','_self')" value="返回登入畫面"/>
         <%}%>
       </form>
     </section>
