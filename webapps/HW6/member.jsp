@@ -79,6 +79,8 @@
                   String emailt=rs.getString("email");
                   String phonet=rs.getString("phone");
                   %>
+                  <p><%out.println("你好,");%>
+                  <%out.println(namet);%></p>
                   <table align= "center">
                   <tr>
                     <th>姓名</th>
@@ -100,9 +102,6 @@
                    <td><%=phonet%></td>
                 </tr>
                 </table>
-                <br>
-                  <br>
-                  <input type="button" id="login" onclick="window.open('index.jsp','_self')" value="回到登入畫面"/>
                   <%
                   x+=1;
                   break;
@@ -111,6 +110,49 @@
             }
           }
           %>
+          <br>
+            <br>
+              <br>
+          <table align= "center">
+            <tr><th colspan="4">會員資料</th></tr>
+            <tr>
+              <th>姓名</th><th>生日</th><th>E-mail</th><th>電話號碼</th>
+              <%
+                try { rs.close();database.closeDB(); } catch (Exception e) { /* ignored */ }
+                try{
+                  database.connectDB();
+                  String sql = "select * from person;";
+                  database.query(sql);
+                  rs = database.getRS();
+                }catch(Exception ex){
+                  out.println(ex);
+                }
+                if(rs!=null){
+                  while(rs.next()){
+                    %>
+                    <tr>
+                      <td><%=rs.getString("name")%></td>
+                      <td><%=rs.getString("birth")%></td>
+                      <td><%=rs.getString("email")%></td>
+                      <td><%=rs.getString("phone")%></td>
+                    </tr>
+                    <%
+                  }
+                try { rs.close();database.closeDB(); } catch (Exception e) { /* ignored */ }
+                }
+              %>
+            </tr>
+          </table>
+          <br>
+            <br>
+            <input type="button" id="login" onclick="window.open('index.jsp','_self')" value="回到登入畫面"/>
+          <%if(x==0 && y==0){%>
+            <script>$("#test").html("登入失敗");</script>
+            <p>帳號或密碼錯誤</p>
+            <input type="button" onclick="history.back()" value="返回登入頁面"/>
+            <input type="button" onclick="window.open('new.jsp','_self')" value="創建新賬號"/>
+          <%}%>
+
           <%if(x==0 && y==0){%>
             <script>$("#test").html("登入失敗");</script>
             <p>帳號或密碼錯誤</p>
