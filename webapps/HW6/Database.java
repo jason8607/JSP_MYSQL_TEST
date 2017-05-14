@@ -25,6 +25,14 @@ public class Database{
       System.out.println(ex);
     }
   }
+  public void closeDB(){
+    try{
+      con.close();
+      stmt.close();
+    }catch(Exception ex){
+      System.out.println(ex);
+    }
+  }
   public void query(String sql){
     try{
       rs = stmt.executeQuery(sql);
