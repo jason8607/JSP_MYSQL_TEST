@@ -1,0 +1,114 @@
+body {
+	background: url(http://pic.qiantucdn.com/58pic/17/24/04/18H58PIC4V2_1024.jpg);
+	color: #000;
+	font: 14px Arial;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+ h1{
+	font-size: 48px;
+	color: rgb(6, 106, 117);
+	padding: 2px 0 10px 0;
+	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 30px;
+}
+/** For the moment only webkit supports the background-clip:text; */
+ h1{
+    background: -webkit-repeating-linear-gradient(-45deg,
+	rgb(18, 83, 93) ,
+	rgb(18, 83, 93) 20px,
+	rgb(64, 111, 118) 20px,
+	rgb(64, 111, 118) 40px,
+	rgb(18, 83, 93) 40px);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+ h1:after{
+	content: ' ';
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin-top: 10px;
+	background: -moz-linear-gradient(left, rgba(147,184,189,0) 0%, rgba(147,184,189,0.8) 20%, rgba(147,184,189,1) 53%, rgba(147,184,189,0.8) 79%, rgba(147,184,189,0) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(147,184,189,0)), color-stop(20%,rgba(147,184,189,0.8)), color-stop(53%,rgba(147,184,189,1)), color-stop(79%,rgba(147,184,189,0.8)), color-stop(100%,rgba(147,184,189,0)));
+	background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
+	background: -o-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
+	background: -ms-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
+	background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
+}
+p{
+  font-family: '標楷體';
+  font-size: 24px;
+}
+#content form input[type="text"],
+#content form input[type="password"] {
+	border-radius: 3px;
+	background: #eae7e7 ;
+	border: 1px solid #c8c8c8;
+	color: #777;
+	padding: 15px 10px 15px 5px;
+	width: 30%;
+}
+table{
+ border: 3px solid;
+ font-family: arial, sans-serif;
+ font-size:25px;
+border-collapse: collapse;
+width: 50%;
+height: 350px;
+}
+th,td{
+	border: 3px solid;
+}
+
+	 input[type="submit"] {
+  position: relative;
+  vertical-align: top;
+  width: 10%;
+  height: 45px;
+  padding: 0;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+	border-radius: 12px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #1abc9c;
+  border: 0;
+  border-bottom: 2px solid #12ab8d;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #12ab8d;
+  box-shadow: inset 0 -2px #12ab8d;
+}
+input[type="submit"]:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input[type="button"] {
+position: relative;
+vertical-align: top;
+width: 10%;
+height: 45px;
+padding: 0;
+font-size: 15px;
+color: white;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+background: #1abc9c;
+border: 0;
+border-bottom: 2px solid #12ab8d;
+cursor: pointer;
+-webkit-box-shadow: inset 0 -2px #12ab8d;
+box-shadow: inset 0 -2px #12ab8d;
+}
+input[type="button"]:active {
+top: 1px;
+outline: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
