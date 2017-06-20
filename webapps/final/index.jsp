@@ -16,6 +16,7 @@ ResultSet rs = database.getRS();
 <!DOCTYPE html>
 <html>
   <head>
+  <title>達拉崩巴動漫論壇</title>
     <style type="text/css">
 
     #mwt_mwt_slider_scroll

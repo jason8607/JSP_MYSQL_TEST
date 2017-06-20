@@ -22,6 +22,7 @@ ResultSet rs = database.getRS();
 <!DOCTYPE html>
 <html>
   <head>
+  <title>達拉崩巴動漫論壇</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
@@ -55,7 +56,7 @@ ResultSet rs = database.getRS();
 
     <div class="card ">
       <div class="card-image" >
-        <img src="<%=picture%>" style="width:18vh;height:30vh;">
+        <img src="<%=picture%>" style="width:60vh;height:90vh;">
       </div>
 
         <div class="card-content">
