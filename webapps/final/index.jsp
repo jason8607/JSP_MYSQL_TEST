@@ -17,6 +17,7 @@ ResultSet rs = database.getRS();
 <html>
   <head>
   <title>達拉崩巴動漫論壇</title>
+       <link rel="icon" type="image/png" sizes="16x16" href="http://blog.iconfactory.com/wp-content/uploads/2015/10/IF-pin1.png">
     <style type="text/css">
 
     #mwt_mwt_slider_scroll

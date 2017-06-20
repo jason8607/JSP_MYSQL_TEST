@@ -23,6 +23,7 @@ ResultSet rs = database.getRS();
 <html>
   <head>
   <title>達拉崩巴動漫論壇</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="http://blog.iconfactory.com/wp-content/uploads/2015/10/IF-pin1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
